@@ -1,8 +1,8 @@
 <?php 
 // DB credentials.
-$localhost = "127.0.0.1";
+$localhost = "mysql.sqlpub.com";
 $username = "rvdluser";
-$password = "rvdlpassword";
+$password = "267fada409e354c4";
 $dbname = "RVDL";
 // db connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
