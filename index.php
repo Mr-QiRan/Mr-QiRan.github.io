@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="login-box">
-       <h2>Welcome RVDL Player!</h2>
+       <h2>Welcome My Channel!</h2>
 
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
         <div class="login-field">
@@ -73,7 +73,7 @@ if($_POST) {
     <h3 class="popup__content__title">
       <font color="white">登录成功，正在跳转至首页</font> 
     </h1>
-     <?php echo "<script>setTimeout(\"location.href = './player';\",800);</script>"; ?>
+     <?php echo "<script>setTimeout(\"location.href = './index';\",800);</script>"; ?>
     </p>
   </div>
 </div>
