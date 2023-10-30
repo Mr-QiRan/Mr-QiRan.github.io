@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" href="/images/index.ico" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
-    <link rel="shortcut icon" href="/images/index.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/sun.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        ul{
+            float: right;
+            list-style-type: none;
+            margin: 15px;
+        }
+        ul li{
+            display: inline-block;
+        }
+    
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+    
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li.active a{
+            background-color: #fff;
+            color: #000;
+        }
+        .title{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+            font-family: Century Gothic;
+        }
+    </style>
 </head>
 <body>
- <h3>由于JDK17的压缩包过大，故贴上网址，请自行下载。https://download.oracle.com/java/17/archive/jdk-17.0.9_linux-x64_bin.tar.gz</h3>
- <h3>点击下方按钮下载tomcat10</h3>
- <div id=tomcat>
-<a href="./apache-tomcat-10.0.26.tar.gz" target="_top">
- <button>tomcat10</button>
-</a>
+    <header>
+        <div class="main">
+            <ul>
+                <li class="active"><a href="#">tomcat&jdk</a></li>
+                <li><a href="/index.html" target="_top">首页</a></li>
+                <li><a href="/apache-tomcat-10.0.26.tar.gz" target="_top">tomcat10</a></li>
+                <li><a href="/https://download.oracle.com/java/17/archive/jdk-17.0.9_linux-x64_bin.tar.gz" target="_top">jdk17</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h2><span style="color: crimson;">tomcat&jdk</span> <span style="color: white;">下载地址</span></h2>
+	 </div>     
+    </header>
 </body>
 </html>
